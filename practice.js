@@ -1,12 +1,19 @@
-function barbieken(word) {
-  var result = word.length;
-  if(result % 2 === 0){
-    console.log("Hi Berbie!");
-  }
-  else{
-    console.log("Hi Kane!");
-  }
+function makeGreen(){
+  document.body.style.backgroundColor = 'Green';
 }
-const word = "pheroqs";
-const check = barbieken(word);
 
+// const makesBlue = document.getElementById('makingBlue');
+// makesBlue.onclick = makeBluee;
+// function makeBluee(){
+//   document.body.style.backgroundColor = 'blue';
+// }
+
+const makesBlue = document.getElementById('makingBlue');
+makesBlue.onclick = function makeBluee(){
+  document.body.style.backgroundColor = 'blue';
+}
+
+function hey(){
+  const ehhmm = document.getElementById('kiree');
+  ehhmm.innerText = 'Jii bolen?';
+}

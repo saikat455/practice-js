@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt, sint ducimus ut, alias consectetur harum atque inventore fugiat quis a aspernatur et nemo vitae quia ratione sit iusto! Atque facilis veniam quibusdam, nam sit ipsam quas. Perferendis, similique deserunt fugiat necessitatibus asperiores doloremque, iure nemo animi nesciunt, quidem quas?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt, sint ducimus ut, alias consectetur harum atque inventore fugiat quis a aspernatur et nemo vitae quia ratione sit iusto! Atque facilis veniam quibusdam, nam sit ipsam quas. Perferendis, similique deserunt fugiat necessitatibus asperiores doloremque, iure nemo animi nesciunt, quidem quas?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sunt, sint ducimus ut, alias consectetur harum atque inventore fugiat quis a aspernatur et nemo vitae quia ratione sit iusto! Atque facilis veniam quibusdam, nam sit ipsam quas. Perferendis, similique deserunt fugiat necessitatibus asperiores doloremque, iure nemo animi nesciunt, quidem quas?</p>
+    </div>
+
+    <div>
+        <textarea name="" id="new-comment" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn-post">post</button>
+    </div>
+    <!-- <button onclick="console.log(6)">Hello World!</button>
+    <button onclick="makeGreen()">Green</button>
+    <button id="makingBlue">Blue</button>
+    <button id="makesYellow">Yellow</button>
+
+    <h2 id="kiree">Hello Saikat!</h2>
+    <button onclick="hey()">Hmm</button> -->
+<!-- 
+    <h3 id="newQst">kmn acho?</h3>
+    <input id="text-field" placeholder="please type delete" type="text">
+    <button id="del-info" disabled>delete</button> -->
+    <script>
+        document.getElementById("btn-post").addEventListener("click", function(){
+            const commentBox = document.getElementById("new-comment");
+            const newComment = commentBox.value;
+            const commentContainer = document.getElementById("comment-container");
+            const p = document.createElement("p");
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+            commentBox.value = '';
+        })
+        // document.getElementById("text-field").addEventListener("keyup",function(event){
+        //     const text = event.target.value;
+        //     const delButton= document.getElementById("del-info");
+        //     if(text === 'delete'){
+        //         delButton.removeAttribute('disabled');
+        //     }
+        //     else{
+        //         delButton.setAttribute('disabled', true);
+        //     }
+        // })
+        // document.getElementById("del-info").addEventListener('click', function(){
+        //     const del = document.getElementById("newQst");
+        //     del.style.display = 'none';
+        // })
+        // document.getElementById('makesYellow').addEventListener('click', function(){
+        // document.body.style.backgroundColor = 'yellow';
+        // })
+
+        // document.getElementById('Qst-bol').addEventListener('click', function(){
+        //     const textfield = document.getElementById('text-field');
+        //     const inputText = textfield.value;
+
+        //     const p = document.getElementById('newQst');
+        //     p.innerHTML = inputText;
+        //     textfield.value = '';
+        // })
+    </script>
+
+    <script src="practice.js"></script>
+</body>
+</html>
